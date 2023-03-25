@@ -26,8 +26,6 @@ public class HlavniProgram {
         ePocitac.setRam(ePamet);
         ePocitac.setPevnyDisk(eDisk);
 
-        System.out.println(ePocitac.toString());
-
         ePocitac.zapniSe();
         ePocitac.zapniSe();
 
@@ -42,5 +40,7 @@ public class HlavniProgram {
         ePocitac.zapniSe();
 
         ePocitac.vymazSouboryOVelikosti(150_000_000_000L);
+
+        System.out.println(ePocitac);
     }
 }

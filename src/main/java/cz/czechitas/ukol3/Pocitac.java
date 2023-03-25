@@ -85,11 +85,11 @@ public class Pocitac {
 
     public void vymazSouboryOVelikosti(long velikost) {
         if (jeZapnuty) {
-            long vyuziteMísto = pevnyDisk.getVyuziteMisto() - velikost;
-            if (vyuziteMísto < 0) {
+            long vyuziteMisto = pevnyDisk.getVyuziteMisto() - velikost;
+            if (vyuziteMisto < 0) {
                 System.err.println("Kapacita paměti nemůže být menší než O.");
             } else {
-                System.out.println("Využité místo je: " + vyuziteMísto + ".");
+                System.out.println("Využité místo je: " + vyuziteMisto + ".");
             }
         } else {
             System.err.println("Počítač je vypnutý.");
